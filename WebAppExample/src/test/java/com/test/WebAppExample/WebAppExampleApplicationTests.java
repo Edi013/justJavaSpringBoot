@@ -1,10 +1,10 @@
-package com.test.firstMaven;
+package com.test.WebAppExample;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class FirstMavenApplicationTests {
+class WebAppExampleApplicationTests {
 
 	@Test
 	void contextLoads() {
