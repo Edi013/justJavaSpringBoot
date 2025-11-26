@@ -11,13 +11,13 @@ public class SecurityAspect {
 
     private Logger logger = Logger.getLogger(SecurityAspect.class.getName());
 
-    @Around("@annotation(org.test.ch1_6.ToLog)")
+    @Around("@annotation(org.test.ch1_6.Secure)")
     public Object secure(ProceedingJoinPoint joinPoint) throws Throwable {
-        logger.info("🔐 SecurityAspect: Before method");
+        logger.info("SecurityAspect: Before method");
 
         Object result = joinPoint.proceed();
 
-        logger.info("🔐 SecurityAspect: After method, returned = " + result);
+        logger.info("SecurityAspect: After method, returned = " + result);
 
         return result;
     }

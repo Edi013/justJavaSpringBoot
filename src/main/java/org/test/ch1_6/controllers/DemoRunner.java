@@ -15,8 +15,8 @@ public class DemoRunner implements CommandLineRunner {
 
     @Override
     public void run(String... args) {
-        System.out.println("Calling ProductService...");
+        System.out.println("\nCalling ProductService in DemoRunner...");
         String name = productService.getProductName();
-        System.out.println("Returned product name = " + name);
+        System.out.println("End of execution - DemoRunner, name = " + name);
     }
 }

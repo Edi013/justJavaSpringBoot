@@ -11,7 +11,8 @@ public class TestClient{
     }
 
     public void test(){
+        System.out.println("\nCalling ProductService in TestClient");
         var name = productService.getProductName();
-        System.out.println("Name: " + name);
+        System.out.println("End of execution - TestCleint, name : " + name);
     }
 }

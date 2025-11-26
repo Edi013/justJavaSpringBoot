@@ -1,12 +1,12 @@
 package org.test.ch1_6.services;
 
 import org.springframework.stereotype.Service;
-import org.test.ch1_6.ToLog;
+import org.test.ch1_6.Secure;
 
 @Service
 public class ProductService {
 
-    @ToLog
+    @Secure
     public String getProductName() {
         return "MacBook Pro 16";
     }
