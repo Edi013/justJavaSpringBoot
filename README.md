@@ -16,6 +16,6 @@
 
 4. Ch9WebScopes -> Chapter 9
 - request, session and application scopes demonstration
--- request -> http request
--- session -> browser session
--- application -> from booting to ending the application
+-- request -> a single HTTP request
+-- session -> tied to the HTTP session (browser session)
+-- application -> exists from Spring context startup until shutdown
