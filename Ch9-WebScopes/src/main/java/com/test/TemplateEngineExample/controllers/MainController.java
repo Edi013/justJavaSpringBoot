@@ -1,6 +1,7 @@
 package com.test.TemplateEngineExample.controllers;
 
 import com.test.TemplateEngineExample.services.LoggedUserManagementService;
+import com.test.TemplateEngineExample.services.LoginCountService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -10,9 +11,11 @@ import org.springframework.web.bind.annotation.RequestParam;
 public class MainController {
 
     private final LoggedUserManagementService loggedUserManagementService;
+    private final LoginCountService loginCountService;
 
-    public MainController(LoggedUserManagementService loggedUserManagementService) {
+    public MainController(LoggedUserManagementService loggedUserManagementService, LoginCountService loginCountService) {
         this.loggedUserManagementService = loggedUserManagementService;
+        this.loginCountService = loginCountService;
     }
 
     @GetMapping("/main")
@@ -31,6 +34,7 @@ public class MainController {
         }
 
         model.addAttribute("username" , username);
+        model.addAttribute("loginCount", loginCountService.getCount());
         return "main.html";
     }
 }
