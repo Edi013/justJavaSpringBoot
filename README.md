@@ -13,3 +13,9 @@
 3. TemplateEngine -> Chapter 8-9
 - an example of a web app using dynamic rendering of html content, generated on server side
 - an web app that handles both /home route and /products, for the latter both GET and POST
+
+4. Ch9WebScopes -> Chapter 9
+- request, session and application scopes demonstration
+-- request -> http request
+-- session -> browser session
+-- application -> from booting to ending the application
