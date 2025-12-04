@@ -1,5 +1,7 @@
 package com.rest.RestServices.models;
 
+import jakarta.annotation.PostConstruct;
+
 public class ErrorDetails {
 
     private String message;
@@ -10,5 +12,10 @@ public class ErrorDetails {
 
     public String getMessage() {
         return message;
+    }
+
+    @PostConstruct
+    public void TestPostConstruct(){
+        System.out.println("ErrorDetails created ");
     }
 }

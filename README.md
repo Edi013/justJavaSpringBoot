@@ -14,8 +14,13 @@
 - an example of a web app using dynamic rendering of html content, generated on server side
 - an web app that handles both /home route and /products, for the latter both GET and POST
 
-4. Ch9WebScopes -> Chapter 9
-- request, session and application scopes demonstration
+4. Ch9WebScopes -> Chapter 9-10
+- Ch9, request, session and application scopes demonstration:
 -- request -> a single HTTP request
 -- session -> tied to the HTTP session (browser session)
 -- application -> exists from Spring context startup until shutdown
+- Ch10, REST services:
+-- creating endpoints
+-- using objects as response body and receiving data from client with @RequestBody
+-- setting headers and response status
+-- handling exceptions as a centralized option using @RestControllerAdvice
