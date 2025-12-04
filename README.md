@@ -4,7 +4,6 @@
 - custom annotation
 - Auto executed code at spring launch time using CommandLineRunner interface - usage example
 
-
 2. WebAppExample -> Chapter 7-8
 - an example of a web app using Spring, Spring Boot and static pages
 - example of MVC architecture
@@ -24,3 +23,10 @@
 -- using objects as response body and receiving data from client with @RequestBody
 -- setting headers and response status
 -- handling exceptions as a centralized option using @RestControllerAdvice
+
+5. ConsumingEndpoints -> Chapter 11
+- Ch11 Consuming REST Endpoints -> implementing the client side of a REST service
+-- OpenFeign ->     A solution offered by the Spring Cloud project.                 It is the right fit for non-reactive apps;
+-- RestTemplate ->  A simple tool used to call REST endpoints in Spring apps.       It is deprecated now;
+-- WebClient ->     A reactive solution for calling REST endpoints in a Spring app. It is the right fit for reactive apps;
+
