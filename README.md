@@ -53,3 +53,8 @@
 - 2. Describes APIs - Writes down all the rules of how an API works in a file -> defines endpoints, parameters, request/response formats, and authentication. 
 - 3. Generates Client Code/Interfaces - Produces ready-to-use classes or interfaces to call the API automatically.
 - 4. Generates Interfaces - Provides an universal contract
+
+7. DataSourcesCh12
+- Ch12 - Projects: DataSources, DataSources2 and DataSources3 (Data Spring)
+- Ch13 - (Transcations)
+- Ch14 - (Data Persistance)
