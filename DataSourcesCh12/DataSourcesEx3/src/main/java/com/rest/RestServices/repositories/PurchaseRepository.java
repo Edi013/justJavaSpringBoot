@@ -16,12 +16,9 @@ public class PurchaseRepository {
     }
 
     public void storePurchase(Purchase purchase) {
-        String sql =
-        "INSERT INTO purchase VALUES (? , ?, ?)";
+        String sql = "INSERT INTO purchase (product, price) VALUES (?, ?)";
 
-        int random = (int)Math.ceil(Math.random());
         jdbc.update(sql,
-                random,
                 purchase.getProduct(),
                 purchase.getPrice());
     }

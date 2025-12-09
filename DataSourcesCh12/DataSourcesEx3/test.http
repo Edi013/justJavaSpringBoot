@@ -6,7 +6,6 @@ POST http://localhost:8080/purchase
 Content-Type: application/json
 
 {
-  "id": 1,
-  "product": "Spring Security in Action",
-  "price": 25.2
+  "product": "Spring Security in Action #2",
+  "price": 26.2
 }
