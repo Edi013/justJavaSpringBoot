@@ -1,0 +1,32 @@
+### Get all purchases
+http://localhost:8080/accounts
+
+### Get all purchases
+# This request doesn't find Jane Down, but "Jane+Down"
+# n IntelliJ IDEA HTTP Client, spaces must be URL-encoded explicitly
+# and + is not converted to a space like it is in browsers.
+http://localhost:8080/accounts?name=Jane+Down
+
+### Get all purchases
+# This is how to send the request encoded
+http://localhost:8080/accounts?name=Jane%20Down
+
+### Create a purchase
+POST http://localhost:8080/transfer
+Content-Type: application/json
+
+{
+  "senderAccountId": 1,
+  "receiverAccountId": 2,
+  "amount": 1.50
+}
+
+### Create a purchase
+POST http://localhost:8080/transfer
+Content-Type: application/json
+
+{
+  "senderAccountId": 2,
+  "receiverAccountId": 1,
+  "amount": 1.50
+}

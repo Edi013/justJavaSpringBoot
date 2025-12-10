@@ -55,8 +55,8 @@
 - 4. Generates Interfaces - Provides an universal contract
 
 7. DataSourcesCh12
-- Ch12 - Projects: DataSources, DataSources2 and DataSources3 (Data Spring)
-- Ch13 - Ch13Transactions(Transcations) 
+- Ch12 : DataSources, DataSources2 and DataSources3 (Data Sources in Spring Apps using JDBC)
+- Ch13 : Ch13Transactions (Transactions using JDBC) 
  -> Rollback = The transaction ends with rollback when the app restores the data to the way it looked at the beginning of the transaction to avoid data inconsistencies.
  -> Commit = The successful end of a transaction when the app stores all the changes made by the transaction's mutable operations.
-- Ch14 - (Data Persistance)
+- Ch14 : DataSpringCh14 https://spring.io/projects/spring-data (Data Persistance with Spring Data using JPA) 
