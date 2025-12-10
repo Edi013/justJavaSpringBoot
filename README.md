@@ -63,12 +63,27 @@
 
 
 8. DataSpring-Ch14 -> Also Ch15 : Testing a Spring app 
-- Unit tests : Focus only on an isolated piece of logic
+
+8. 1. 1.  Unit tests
+- Focus only on an isolated piece of logic
 - Integration tests : Focus on validating that multiple components correctly interact with each other
 - A CI tool, such as Jenkins or TeamCity, runs the tests every time a developer changes the app by pushing to remote
 - About unit tests, you ll find these three steps (assumptions, call, and validations) named a bit differently:'arrange, act, and assert' or ' given, when, and then'.
 
-Dependencies:
+8. 1. 2. Dependencies:
 - JUnit Jupiter = Run tests with JUnit 5 (can run independently -> junit-jupiter)
 - Mockito Core = Create and verify mocks programmatically (mokito-core has dependency upon -> junit-jupiter )
 - Mockito JUnit Jupiter = Allows @Mock/@InjectMocks to be initialized automatically via @ExtendWith(MockitoExtension.class) (need both junit-jupiter and mokito-core to run)
+
+8. 2. Integration Tests
+- an integration test looks very similar to a unit test. You still follow the same steps of identifying the assumptions, calling the tested method, and validating the results
+- now the test doesn t focus on an isolated piece of logic, so you don t necessarily have to mock all the dependencies
+- it is not mandatory anymore, but you can still mock if needed
+
+8. 2. 1. What kind of integrations can we test? We have a few possibilities:
+- Integration between two (or more) objects of your app. Testing that the objects interact correctly helps you identify problems in how they collaborate if you change one of them.
+
+- Integration of an object of your app with some capability the framework enhances it with. Testing how an object interacts with some capability the framework provides helps you identify issues that can occur when you upgrade the framework to a new version. The integration test helps you immediately identify if something changed in the framework and the capability the object relies on doesn t work the same way.
+
+- Integration of the app with its persistence layer (the database). Testing how the repository works with the database ensures you quickly identify problems that might occur when upgrading or changing a dependency that helps your app work with persisted data (such as the JDBC driver).
+

@@ -1,4 +1,4 @@
-package com.rest.UnitTestsCh15;
+package com.rest.UnitTestsCh15.unit;
 
 import com.rest.UnitTestsCh15.exceptions.AccountNotFoundException;
 import com.rest.UnitTestsCh15.models.Account;
