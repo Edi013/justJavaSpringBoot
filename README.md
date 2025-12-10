@@ -60,3 +60,15 @@
  -> Rollback = The transaction ends with rollback when the app restores the data to the way it looked at the beginning of the transaction to avoid data inconsistencies.
  -> Commit = The successful end of a transaction when the app stores all the changes made by the transaction's mutable operations.
 - Ch14 : DataSpringCh14 https://spring.io/projects/spring-data (Data Persistance with Spring Data using JPA) 
+
+
+8. DataSpring-Ch14 -> Also Ch15 : Testing a Spring app 
+- Unit tests : Focus only on an isolated piece of logic
+- Integration tests : Focus on validating that multiple components correctly interact with each other
+- A CI tool, such as Jenkins or TeamCity, runs the tests every time a developer changes the app by pushing to remote
+- About unit tests, you ll find these three steps (assumptions, call, and validations) named a bit differently:'arrange, act, and assert' or ' given, when, and then'.
+
+Dependencies:
+- JUnit Jupiter = Run tests with JUnit 5 (can run independently -> junit-jupiter)
+- Mockito Core = Create and verify mocks programmatically (mokito-core has dependency upon -> junit-jupiter )
+- Mockito JUnit Jupiter = Allows @Mock/@InjectMocks to be initialized automatically via @ExtendWith(MockitoExtension.class) (need both junit-jupiter and mokito-core to run)

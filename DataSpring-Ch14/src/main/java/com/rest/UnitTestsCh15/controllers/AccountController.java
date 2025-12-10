@@ -1,11 +1,9 @@
-package com.rest.RestServices.controllers;
+package com.rest.UnitTestsCh15.controllers;
 
-import com.rest.RestServices.models.Account;
-import com.rest.RestServices.models.TransferRequest;
-import com.rest.RestServices.services.TransferService;
+import com.rest.UnitTestsCh15.models.Account;
+import com.rest.UnitTestsCh15.models.TransferRequest;
+import com.rest.UnitTestsCh15.services.TransferService;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
 
 @RestController
 public class AccountController {

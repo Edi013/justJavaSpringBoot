@@ -1,8 +1,8 @@
-package com.rest.RestServices.services;
+package com.rest.UnitTestsCh15.services;
 
-import com.rest.RestServices.exceptions.AccountNotFoundException;
-import com.rest.RestServices.models.Account;
-import com.rest.RestServices.repositories.AccountRepository;
+import com.rest.UnitTestsCh15.exceptions.AccountNotFoundException;
+import com.rest.UnitTestsCh15.models.Account;
+import com.rest.UnitTestsCh15.repositories.AccountRepository;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.stereotype.Service;
 

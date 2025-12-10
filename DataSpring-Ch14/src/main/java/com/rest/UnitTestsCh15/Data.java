@@ -1,4 +1,4 @@
-package com.rest.RestServices;
+package com.rest.UnitTestsCh15;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

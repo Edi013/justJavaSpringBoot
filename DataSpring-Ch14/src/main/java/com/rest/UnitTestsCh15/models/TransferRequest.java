@@ -1,4 +1,4 @@
-package com.rest.RestServices.models;
+package com.rest.UnitTestsCh15.models;
 
 import lombok.Data;
 

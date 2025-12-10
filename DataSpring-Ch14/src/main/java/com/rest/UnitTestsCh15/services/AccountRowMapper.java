@@ -1,6 +1,6 @@
-package com.rest.RestServices.services;
+package com.rest.UnitTestsCh15.services;
 
-import com.rest.RestServices.models.Account;
+import com.rest.UnitTestsCh15.models.Account;
 import org.springframework.jdbc.core.RowMapper;
 
 import java.sql.ResultSet;

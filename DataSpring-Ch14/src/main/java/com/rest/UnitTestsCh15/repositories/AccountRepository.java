@@ -1,6 +1,6 @@
-package com.rest.RestServices.repositories;
+package com.rest.UnitTestsCh15.repositories;
 
-import com.rest.RestServices.models.Account;
+import com.rest.UnitTestsCh15.models.Account;
 import org.springframework.data.jdbc.repository.query.Modifying;
 import org.springframework.data.jdbc.repository.query.Query;
 import org.springframework.data.repository.CrudRepository;
